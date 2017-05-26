@@ -1,0 +1,17 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/rel/wechat/me"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "avatar": "https://cdn.quncrm.com/avatar/wechat/aHR0cDovL3d4LnFsb2dvLmNuL21tb3Blbi93aWFLdjRLVDFCTlgxMTJXVXBHWUVDc2N5T1ZObmlhOHpkUno2V2ljajZoY2JRMndYdGtOVjhmWEJRU3dHb09qM1JoQ3gzTmlhU1ZTa2VNMURIaEN4ZlhKYlowTHR3MXlxSnJVLzA=",
+      "_links": {
+        "self": {
+          "href": "https://localhost:3000/rel/wechat/me"
+        }
+      }
+    }
+  }
+}
