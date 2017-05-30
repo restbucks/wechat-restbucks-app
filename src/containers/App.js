@@ -44,7 +44,7 @@ const mapDispatchToProps = (dispatch) => {
             dispatch(fetchWeChatUserProfile(data));
           });
         } else if (response.status === 401) {
-          window.location.href = "http://localhost:8080/wechat/browser"; //hypermedia? or
+          window.location.href = "/wechat/oauth/authorize?origin=" + encodeURIComponent(window.location.href); //hypermedia? or
         }
       });
     }
