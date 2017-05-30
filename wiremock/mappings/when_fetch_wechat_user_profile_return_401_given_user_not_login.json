@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/rel/wechat/user/profile/me",
+    "headers": {
+      "x-csrf-token": {
+        "equalTo": ""
+      }
+    }
+  },
+  "response": {
+    "status": 401
+  }
+}

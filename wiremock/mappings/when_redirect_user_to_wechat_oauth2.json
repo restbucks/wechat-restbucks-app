@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/wechat/browser"
+  },
+  "response": {
+    "status": 302,
+    "headers": {
+      "Location": "http://localhost:3000",
+//      "Location": "https://www.baidu.com",
+      "Set-Cookie": "wechat.restbucks.org.isWeChatUserIdentified=true; Path=/"
+    }
+  }
+}

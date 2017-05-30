@@ -1,7 +1,12 @@
 {
   "request": {
     "method": "GET",
-    "url": "/rel/wechat/me"
+    "url": "/rel/wechat/user/profile/me",
+    "headers": {
+      "x-csrf-token": {
+        "matches": ".*"
+      }
+    }
   },
   "response": {
     "status": 200,
