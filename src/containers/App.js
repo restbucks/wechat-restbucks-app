@@ -28,7 +28,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   let cookies = new Cookies();
   let headers = new Headers();
-  headers.set("x-csrf-token", cookies.get("wechat.restbucks.org.csrfToken"));
+  headers.set("X-XSRF-TOKEN", cookies.get("XSRF-TOKEN"));
 
   return {
     onload: (props) => {
@@ -43,7 +43,7 @@ const mapDispatchToProps = (dispatch) => {
           response.json().then(data => {
             dispatch(fetchWeChatUserProfile(data));
           });
-        } else if (response.status === 401) {
+        } else if (response.status === 401 || response.status === 403) {
           window.location.href = "/wechat/oauth/authorize?origin=" + encodeURIComponent(window.location.href); //hypermedia? or
         }
       });
